@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="index.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Age calculator app</title>
-
+  <title>Age calculator app</title>
+ 
 </head>
 <body>
 
@@ -14,32 +14,36 @@
 
 
     <form id="date-form">
-      <label for="day">
+      <label>
         DAY
-        <input class="input" id="day" type="number" placeholder="DD">
+        <input class="input" id="dayInput" type="number" placeholder="DD" min="1" max="31">
       </label>
 
-      <label for="day">
+      <label>
         MONTH
-        <input class="input" id="month" type="number" placeholder="MM">
+        <input class="input" id="monthInput" type="number" placeholder="MM" min="1" max="12">
       </label>
       
-      <label for="day">
+      <label>
         YEAR
-        <input class="input" id="year" type="number" placeholder="YYYY">
+        <input class="input" id="yearInput" type="number" placeholder="YYYY" min="1900" max="2050">
       </label>
 
     
-      <button id="submit"><img src="./assets/images/icon-arrow.svg" /></button>
+      <button id="submitButton"><img src="./assets/images/icon-arrow.svg" /></button>
     
     </form>
 
     <secction class="age-output">   
-      <div id="years-output">- - years</div>
-      <div id="months-output">- - months</div>
-      <div id="days-output">- - days</div>
+      <div><span id="years-output">– –</span> years</div>
+      <div><span id="months-output">– –</span> months</div>
+      <div><span id="days-output">– –</span> days</div>
     </secction>
     
+    <div id="consola">
+      tu
+    </div>
+
   </main>
   
   <div class="attribution">
@@ -47,6 +51,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
-  <script src="index.js"></script>
+  <script src="index.js" ></script>
 </body>
 </html>
