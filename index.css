@@ -53,7 +53,7 @@ input{
     border-radius: 6px;
     border: solid 1px hsl(0, 0%, 86%);
     margin-top: .2em;
-    /* color: hsl(0, 1%, 44%); */
+    color: hsl(0, 1%, 44%);
 }
 input:hover{
     cursor: pointer;
@@ -63,6 +63,8 @@ input:hover{
 
 .error{
     color:hsl(0, 100%, 67%);
+}
+.error-border{
     border-color: hsl(0, 100%, 67%);
 }
 
