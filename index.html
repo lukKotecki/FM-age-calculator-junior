@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="index.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
  
 </head>
 <body>
@@ -15,22 +18,25 @@
 
     <form id="date-form">
       <label>
-        DAY
-        <input class="input" id="dayInput" type="number" placeholder="DD" min="1" max="31">
+        <p class="labe-title">DAY</p>
+        <input class="input error" id="day-input" type="number" placeholder="DD" min="1" max="31">
+        <p class="error-message" id="day-error">This field is required</p>
       </label>
 
       <label>
-        MONTH
-        <input class="input" id="monthInput" type="number" placeholder="MM" min="1" max="12">
+        <p class="labe-title">MONTH</p>
+        <input class="input" id="month-input" type="number" placeholder="MM" min="1" max="12">
+        <p class="error-message" id="month-error">This field is required</p>
       </label>
       
       <label>
-        YEAR
-        <input class="input" id="yearInput" type="number" placeholder="YYYY" min="1900" max="2050">
+        <p class="labe-title">YEAR</p>
+        <input class="input" id="year-input" type="number" placeholder="YYYY" min="1900" max="2050">
+        <p class="error-message" id="year-error">This field is required</p>
       </label>
 
     
-      <button id="submitButton"><img src="./assets/images/icon-arrow.svg" /></button>
+      <button id="submit-button"><img src="./assets/images/icon-arrow.svg" /></button>
     
     </form>
 
@@ -39,16 +45,12 @@
       <div><span id="months-output">– –</span> months</div>
       <div><span id="days-output">– –</span> days</div>
     </secction>
-    
-    <div id="consola">
-      tu
-    </div>
 
   </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Łukasz Kotecki</a>.
   </div>
 
   <script src="index.js" ></script>

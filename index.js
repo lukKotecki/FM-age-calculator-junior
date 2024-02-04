@@ -1,16 +1,19 @@
 
 const container = document.getElementsByClassName('container')[0];
 
-const dayInput = document.getElementById('dayInput')
-const monthInput = document.getElementById('monthInput')
-const yearInput = document.getElementById('yearInput')
-const submitButton = document.getElementById('submitButton')
+const dayInput = document.getElementById('day-input')
+const monthInput = document.getElementById('month-input')
+const yearInput = document.getElementById('year-input')
+const submitButton = document.getElementById('submit-button')
 const dateForm = document.getElementById('date-form')
 
 const yearsOutput = document.getElementById('years-output')
 const monthsOutput = document.getElementById('months-output')
 const daysOutput = document.getElementById('days-output')
 
+const dayError = document.getElementById('day-error')
+const monthError = document.getElementById('month-error')
+const yearError = document.getElementById('year-error')
 
 submitButton.addEventListener('click', (e) =>{
   e.preventDefault()

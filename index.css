@@ -1,52 +1,4 @@
 
-@font-face {
-    font-family: "Poppins";
-    src:
-      local("Poppins"),
-      url("assets/fonts/Poppins-Bold.ttf");
-      font-style: normal;
-      font-weight: 700;
-}
-  @font-face {
-    font-family: "Poppins";
-    src:
-    local("Poppins"),
-    url("assets/fonts/Poppins-BoldItalic.ttf");
-    font-style: italic;
-    font-weight: 700;
-}
-@font-face {
-    font-family: "Poppins";
-    src:
-        local("Poppins"),
-        url("assets/fonts/Poppins-ExtraBold.ttf");
-        font-style: normal;
-        font-weight: 900;
-}
-@font-face {
-    font-family: "Poppins";
-    src:
-    local("Poppins"),
-    url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
-    font-style: italic;
-    font-weight: 900;
-}
-@font-face {
-    font-family: "Poppins";
-    src:
-        local("Poppins"),
-        url("assets/fonts/Poppins-Italic.ttf");
-        font-style: italic;
-        font-weight: 400;
-}
-@font-face {
-    font-family: "Poppins";
-    src:
-    local("Poppins"),
-    url("assets/fonts/Poppins-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
-}
 *{
     margin: 0;
     padding: 0;
@@ -69,11 +21,10 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 700px;
-    min-height: 500px;
     align-items: center;
-    padding: 3rem;
-    border-radius: 20px 20px 150px 20px;
-    margin:1em
+    padding: 1.5rem;
+    border-radius: 18px 18px 80px 18px;
+    margin:1em;
 }
 
 #date-form{
@@ -83,54 +34,72 @@ body{
     justify-content: space-between;
     border-bottom: solid hsl(0, 0%, 86%) 2px;
     padding-bottom: 2.8rem;
-    color: hsl(0, 2%, 25%);
+    /* color: hsl(0, 2%, 25%); */
+    position:relative;
 }
 #date-form label{
     font-family: 700;
-    font-size: .8rem;
+    font-size: .6rem;
     letter-spacing: .2em;
     color: hsl(0, 1%, 44%);
 }
 
 input{
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 900;
-    width: 125px;
+    width: 80px;
     padding: .5em  0 .5em .8em;
     border-radius: 6px;
     border: solid 1px hsl(0, 0%, 86%);
     margin-top: .2em;
-    color: hsl(0, 1%, 44%);
+    /* color: hsl(0, 1%, 44%); */
 }
 input:hover{
     cursor: pointer;
     border: solid 1px hsl(259, 100%, 65%);
-
+    
 }
 
-#submitButton{
+.error{
+    color:hsl(0, 100%, 67%);
+    border-color: hsl(0, 100%, 67%);
+}
+
+.error-message{
+    color:hsl(0, 100%, 67%);
+    /* display: none; */
+    font-size: .45rem;
+    letter-spacing: 0rem;
+    position:absolute;
+    top:60px;
+}
+
+#submit-button{
     border-radius: 50%;
     border: none;
-    width:5rem;
-    height: 5rem;
+    width:3rem;
+    height: 3rem;
     background-color: hsl(259, 100%, 65%);
-    position: relative;
-    left:3px;
-    top:88px ;
+    position: absolute;
+    left:40%;
+    top:78px ;
 }
-#submitButton:hover{
+#submit-button:hover{
     cursor: pointer;
     background-color: hsl(0, 0%, 8%);
+}
+#submit-button img{
+    width:20px;
+    height:20px;
 }
 
 .age-output{
     font-style: italic;
     font-weight: 900;
     width: 100%;
-    margin-top: .4em;
-    /* margin-left: .4em; */
-    font-size: 5rem;
+    margin-top: 1em;
+    font-size: 3rem;
     line-height: 1.1em;
 }
 
@@ -139,19 +108,58 @@ input:hover{
 
 }
 
-/* 
-@media(min-width:400px){
-    body{
-        background-color: red;
+
+
+
+@media(min-width:700px){
+
+    .container{  
+        padding: 3rem;
+        width:700px;
+        border-radius: 20px 20px 150px 20px;
+    }
+
+    
+    #date-form label{
+        font-family: 700;
+        font-size: .8rem;
+        letter-spacing: .2em;
+        /* color: hsl(0, 1%, 44%); */
+    }
+
+    input{
+        font-size: 1.5rem;
+        width: 120px;
+        padding: .5em  0 .5em .8em;
+        border-radius: 6px;
+        margin-top: .2em;
+    }
+
+    #submit-button{
+        position: relative;
+        left:4px;
+        width:5rem;
+        height: 5rem;
+        top:88px ;
+    }
+    
+    #submit-button img{
+        width:50px;
+        height:50px;
+    }
+    .age-output{
+        font-size: 5rem;
+        margin-top: .4em;
+    }
+
+    .error-message{
+        color:hsl(0, 100%, 67%);
+        font-size: .7rem;
+        letter-spacing: 0rem;
+        top:90px;
     }
 
 }
-@media(min-width:700px){
-    body{
-        background-color: blue;
-    }
-
-} */
 
 
 
